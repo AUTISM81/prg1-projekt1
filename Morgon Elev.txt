@@ -1,0 +1,19 @@
+program ELEV {
+	Start.öppnaÖgon(kl 6)
+	Rörelse.Gå("Kök")
+	Rörelse.Händelse(öppna kylskåp)
+	Rörelse.Händelse(Ta ut smör och bröd)
+	Rörelse.Händelse(Gör smörgås)
+	Rörelse.Gå("Eget Rum")
+	Rörelse.Händelse(Ta ut kläder)
+	Rörelse.Händelse(Ta på kläder)
+	Rörelse.Gå("buss station")
+	Rörelse.händelse(Sätter busskort mot kortläsare på buss)
+	Rörelse.gå("Längst bak i buss)
+	Vänta.möts("Umeå Vasaplan")
+	Rörelse.gå("Umeå Vasaplan Bussshålplats")
+	Rörelse.gå("NTI Skola")
+	Vänta.tills(kl 8:20)
+	Rörelse.gå("Platon, NTI Skola")
+	Stop.klar
+}
