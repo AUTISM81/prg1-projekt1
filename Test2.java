@@ -8,6 +8,27 @@
  
 public class Test2 {
 	public static void main (String[] args){
+		
+		char c1='\u00D8';
+		
+		char c2='\u00F8';
+		
+		char c3='\u262D';
+		
+		JOptionPane.showMessageDialog(null, ""+c1);
+		JOptionPane.showMessageDialog(null, ""+c2);			
+		JOptionPane.showMessageDialog(null, ""+c3);	
+
+		String a;
+		a = "Programspråk";
+		
+		
+		String b;
+		b = a.substring(4,8) + a.substring(7);
+		
+		
+		JOptionPane.showMessageDialog(null, b);
+		
 		// variabeldeklaration
 		
 		String msg;

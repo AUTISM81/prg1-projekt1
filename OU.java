@@ -18,8 +18,12 @@ public class OU {
 		JOptionPane.showMessageDialog(null, s3);
 		s3 = "\n 070-3960100";
 		
+		char s3;
+		
+		s3 = '5';
+		
 		String s4;
 		s4 = s1 + s2 + s3;
 		JOptionPane.showMessageDialog(null,s4);
 	}
-}
+}	
