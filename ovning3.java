@@ -1,22 +1,43 @@
-import javax.swing.*;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class ovning3 {
-	public static void main (String[] args) {
-	
-	//variabler
-	
-	int d = 60000000000000;
-	
-	double pi = 3.1415;
-	
-	long r = d/2;
-	
-	double a = r*r*pi;
-	
-	double o = d*pi;
-	
-	JOptionPane.showMessageDialog(null, "diameter = " + d + " cm" + "\nradie = " + r + " cm");
-	JOptionPane.showMessageDialog(null, "area = " + a + " cm2" + "\nomkrets = " + o + " cm");
-	
+
+    public static void main(String[] args) {
+        int num1;
+        int num2;
+        String operation;
+
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("please enter the first number");
+        num1 = input.nextInt();
+
+        System.out.println("please enter the second number");
+        num2 = input.nextInt();
+
+        Scanner op = new Scanner(System.in);
+
+        System.out.println("Please enter operation");
+        operation = op.next();
+				
+        if (operation.equals("+"))
+        {
+            System.out.println("your answer is " + (num1 + num2));
+        }
+        if  (operation == "-")
+        {
+            System.out.println("your answer is " + (num1 - num2));
+        }
+
+        if (operation == "/")
+        {
+            System.out.println("your answer is " + (num1 / num2));
+        }
+        if (operation == "*")
+        {
+            System.out.println("your answer is " + (num1 * num2));
+        }
 	}
 }
