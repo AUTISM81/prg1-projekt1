@@ -4,7 +4,6 @@ import javax.swing.*;
 public class lek {
 	public static void main (String[] args) {
 	//variabler
-	int age;
 	String losen;
 	String user;
 	
@@ -12,28 +11,26 @@ public class lek {
 	
 	Scanner input = new Scanner(System.in);
 	
-	System.out.println("Please enter username");
-	user = input.nextLine();
+	user = JOptionPane.showInputDialog(null, "Please enter username");
 	
 	if (user.equals ("noob1337")) {
 	
-	System.out.println("Please enter password");
-	losen = input.nextLine();
+	losen = JOptionPane.showInputDialog("Please enter password");
 	
 	if (losen.equals ("hej123")) {
-		
-	System.out.println("Please enter your age");
 	
-	age = input.nextInt();
+	String height = JOptionPane.showInputDialog("Please enter your height in centimeters");
+	int height1 = Integer.parseInt(height);
 	
-	if (age >= 18) {
-		System.out.println ("Oj du e ju nog gammal att kopa ut, ge mig en 7:a gubbe!");
+	String age = JOptionPane.showInputDialog("Please enter your age");
+	int age1 = Integer.parseInt(age);
+	
+	if (age1 >= 18 || height1 > 185) {
+		JOptionPane.showMessageDialog(null, "Oj du se ju nog gammal ut fo u kunna kop ut, ge mig en 7:a!");
+			} else if (age1 < 18) {
+		JOptionPane.showMessageDialog(null, "du e inte gammal nog att va hera unge!" + "\nStick!");
+				}
 			}
-	if (age < 18) {
-		System.out.println("du e inte gammal nog att va hera unge!" + "\nStick!");
-			}
-		}
-	System.out.println("Fel losen din bog!" + "\nStick!");
 		}
 	}
 }
