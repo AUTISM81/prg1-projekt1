@@ -22,5 +22,6 @@ public static void main (String [] args){
 		k = k + 1;
 	}
 	JOptionPane.showMessageDialog(null, "din summa = " + summa);
+	JOptionPane.showMessageDialog(null, "din summa = " + summa);
 	}
 }
